@@ -1,0 +1,19 @@
+{
+  "name": "video_5",
+  "version": "1.0.0",
+  "description": "used to make and learn express and everything node has to offer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "example",
+    "data"
+  ],
+  "author": "Sriram",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nedb": "^1.8.0"
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <!-- <img src="" alt="rain" id="rainbow"> -->
+    <script>
+    //getting image data 
+    console.log('geting data');
+
+    // fetch('rainbow.jpg') // 
+    // .then(response => { 
+    //     console.log(response)
+    //     return response.blob();
+    // })
+    // .then(blob => {
+    //     console.log(blob)
+    //     document.getElementById("rainbow").src = URL.createObjectURL(blob); 
+
+    //     //inserting into the html, DOM 
+    // }).catch(error=>{
+    //     console.log("error!")
+    //     console.error(error)
+    // })
+
+    //USING ASYNC ANS AWAIT 
+    // async function catchRainbow()  { 
+    //    const response = await fetch('rainbow.jpg');
+    //    const blob = await response.blob() 
+    //    document.getElementById("rainbow").src = URL.createObjectURL(blob);
+    //    //await the result of fetch and store info in response 
+    //    // here fetch is a async function so you need to add aawait
+    // }
+    // catchRainbow();
+    const api_url = "https://api.wheretheiss.at/v1/satellites"
+    async function get_ISS() { 
+        const response = await fetch(api_url);
+        const data = await response.json(); 
+        console.log(data); 
+    }
+    get_ISS(); 
+    </script>
+</body>
+</html>
