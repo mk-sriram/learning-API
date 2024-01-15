@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "URLShortstyle.css"> 
+    <title>URL Shortner</title>
+</head>
+<body>
+    <div class="container">
+        <i class="bx bx-link-alt"></i>
+        <h1>Url Shortner</h1>
+        <label for="originalURL">Enter URL to Shorten :</label>
+        <input type="text" id="originalURL" placeholder="https://example.com">
+        <div class="buttons">
+            <button id="reload-btn">Reload</button>
+            <button id="short-btn">Short It</button>
+        </div>
+        <label for="shortendedUrl"> Shortened URL : </label>
+        <textarea id="shortenedUrl" rows = "3" readonly></textarea>
+    </div>
+
+    <script src="UrlShortscript.js" defer></script>
+</body>
+</html>
